@@ -65,3 +65,13 @@ print(False or False)  # False
 # not - negacja
 print(not True)  # False
 print(not False)  # True
+
+a = 7
+b = 89
+
+print(f"Porównanie {a} > {b} = {a > b}")  # Porównanie 7 > 89 = False
+print(f"Porównanie {a} < {b} = {a < b}")  # Porównanie 7 < 89 = True
+print(f"Porównanie {a} <= {b} = {a <= b}")  # Porównanie 7 <= 89 = True
+print(f"Porównanie {a} >= {b} = {a >= b}")  # Porównanie 7 >= 89 = False
+print(f"Porównanie {a} != {b} = {a != b}")  # Porównanie 7 != 89 = True,  czy różne
+print(f"Porównanie {a} == {b} = {a == b}")  # Porównanie 7 == 89 = False, czy równe
