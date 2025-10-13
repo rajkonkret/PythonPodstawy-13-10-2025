@@ -48,10 +48,14 @@ dict_small.update([("a", 8), ("c", 8)])
 print(dict_small)  # {'x': 4, 'a': 8, 'c': 8}
 
 # input() - wprowadzanie danych np.:  z klawiatury
-tekst = input("Podaj imię:")
-print(tekst)
+# tekst = input("Podaj imię:")
+# print(tekst)
 # Podaj imię:Radek
 # Radek
 # napisac aplikacje kalkulator
 # pobrac dane 2x input()
 # wyswietlic wynik obliczenia (+) print()
+a = int(input("Podaj pierwszą liczbę:"))  # input zwraca str()
+b = float(input("Podaj drugą liczbę:"))
+# print(a + b) # konkatenacja
+print(int(a) + int(b))
