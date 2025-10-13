@@ -75,3 +75,4 @@ print(f"Porównanie {a} <= {b} = {a <= b}")  # Porównanie 7 <= 89 = True
 print(f"Porównanie {a} >= {b} = {a >= b}")  # Porównanie 7 >= 89 = False
 print(f"Porównanie {a} != {b} = {a != b}")  # Porównanie 7 != 89 = True,  czy różne
 print(f"Porównanie {a} == {b} = {a == b}")  # Porównanie 7 == 89 = False, czy równe
+print(f"Porównanie {a == b = }")  # Porównanie a == b = False
