@@ -115,3 +115,18 @@ print(id(lista_copy))
 # 1416163151808
 # 1416163151808
 # 1416165021376
+
+liczby = [54, 999, 34, 22, 13.34, 567]
+print(liczby)  # [54, 999, 34, 22, 13.34, 567]
+print(type(liczby))  # <class 'list'>
+
+liczby.sort()  # zmienia oryginał
+print(liczby)  # [13.34, 22, 34, 54, 567, 999]
+liczby.sort(reverse=True)
+print(liczby)  # [999, 567, 54, 34, 22, 13.34]
+
+liczby = [54, 999, 34, 22, 13.34, 567, "A"]
+print(liczby)  # [54, 999, 34, 22, 13.34, 567, 'A']
+print(type(liczby))  # <class 'list'>
+
+# liczby.sort()  # TypeError: '<' not supported between instances of 'str' and 'int'
