@@ -52,3 +52,6 @@ tekst = input("Podaj imię:")
 print(tekst)
 # Podaj imię:Radek
 # Radek
+# napisac aplikacje kalkulator
+# pobrac dane 2x input()
+# wyswietlic wynik obliczenia (+) print()
