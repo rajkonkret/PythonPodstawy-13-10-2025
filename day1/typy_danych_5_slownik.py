@@ -37,3 +37,12 @@ print(dictionary.get('Imie'))  # None
 print(dictionary.get('imie'))  # Radek
 # możemy określic wartosc domyslną
 print(dictionary.get('Imie', "default"))  # default
+
+dictionary.update({"data": "31-12-2030"})
+print(dictionary)
+# {'imie': 'Radek', 'wiek': 50, 'data': '31-12-2030'}
+
+dict_small = {"x": 4}
+print(dict_small)  # {'x': 4}
+dict_small.update([("a", 8), ("c", 8)])
+print(dict_small)  # {'x': 4, 'a': 8, 'c': 8}
