@@ -34,3 +34,13 @@ user = "Tomek"
 print(f"{user:>10}")  # "     Tomek" do prawej
 print(f"{user:<20}")  # "Tomek               " do lewej
 print(f"{user:^20}")  # "       Tomek        " centrowanie
+
+print(liczba)  # 890123456987123
+print(f"Nasza duża liczba: {liczba:,}")  # Nasza duża liczba: 890,123,456,987,123
+print(f"Nasza duża liczba: {liczba:_}")  # Nasza duża liczba: Nasza duża liczba: 890_123_456_987_123
+print(f"Nasza duża liczba: {liczba:_}".replace("_", " "))  # Nasza duża liczba: 890 123 456 987 123
+
+# liczba2 = 1500000000000
+liczba2 = 1_500_000_000_000
+print(liczba2)  # 1500000000000
+print(type(liczba2))  # <class 'int'>
