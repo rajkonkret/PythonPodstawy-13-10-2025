@@ -66,3 +66,9 @@ print(zbior - zbior_2)  # {24, 777, 17, 22}
 
 print(zbior.difference(zbior_2))  # {24, 777, 17, 22}
 print(zbior_2.difference(zbior))  # {667, 52, 12.34, 62}
+
+# update() - łączy zbiory, zapisuje w zbiorze
+# nadpisuje bazowy zbiór
+print(zbior)  # {777, 11, 44, 17, 18, 22, 24}
+zbior.update(zbior_2)
+print(zbior)  # {777, 11, 44, 12.34, 17, 18, 52, 22, 24, 667, 62}
