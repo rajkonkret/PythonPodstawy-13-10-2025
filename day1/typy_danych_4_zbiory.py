@@ -75,3 +75,9 @@ print(zbior)  # {777, 11, 44, 12.34, 17, 18, 52, 22, 24, 667, 62}
 
 krotka = tuple(zbior)
 print(krotka)  # (777, 11, 44, 12.34, 17, 18, 52, 22, 24, 667, 62)
+
+# sprawdzenie czy element istnieje w ...
+print(777 in zbior)  # True
+print(777 in lista)  # True
+print(777 in krotka)  # True
+print(767 in zbior)  # False
