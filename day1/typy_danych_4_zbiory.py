@@ -59,3 +59,10 @@ print(zbior.union(zbior_2, zbior_3))
 # część wspólna - zwraca nowy zbiór
 print(zbior & zbior_2)  # {18, 11, 44}
 print(zbior.intersection(zbior_2))  # {18, 11, 44}
+
+# różnica zbiorów
+print(zbior - zbior_2)  # {24, 777, 17, 22}
+# {777, 11, 44, 17, 18, 22, 24} - {18, 667, 52, 11, 44, 12.34, 62} = {24, 777, 17, 22}
+
+print(zbior.difference(zbior_2))  # {24, 777, 17, 22}
+print(zbior_2.difference(zbior))  # {667, 52, 12.34, 62}
