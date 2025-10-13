@@ -130,3 +130,14 @@ print(liczby)  # [54, 999, 34, 22, 13.34, 567, 'A']
 print(type(liczby))  # <class 'list'>
 
 # liczby.sort()  # TypeError: '<' not supported between instances of 'str' and 'int'
+
+lista_copy.reverse()  # tylko odwrócenie
+print(lista_copy)  # ['Radek', 'Zenek', 'Tomek', 'Roman']
+
+# rozpakowanie sekwencji
+tekst = "Pyth on."
+lista1 = list(tekst)
+print(lista1)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+
+lista2 = [tekst]
+print(lista2)  # ['Pyth on.']
