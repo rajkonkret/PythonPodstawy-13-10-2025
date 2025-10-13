@@ -18,3 +18,10 @@ print(type(tupla))  # <class 'tuple'>
 tupla2 = (43,)
 print(tupla2)  # (43,)
 print(type(tupla2))  # <class 'tuple'>
+
+# tupla_liczby[3] = 123  # TypeError: 'tuple' object does not support item assignment
+del tupla_liczby  # skasowanie całej tupli
+# print(tupla_liczby)  # NameError: name 'tupla_liczby' is not defined
+
+print(tupla_imiona.index("Radek"))  # index 0
+print(tupla_imiona.count("Radek"))  # występuje 1 raz
