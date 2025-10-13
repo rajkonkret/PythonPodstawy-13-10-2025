@@ -46,3 +46,9 @@ dict_small = {"x": 4}
 print(dict_small)  # {'x': 4}
 dict_small.update([("a", 8), ("c", 8)])
 print(dict_small)  # {'x': 4, 'a': 8, 'c': 8}
+
+# input() - wprowadzanie danych np.:  z klawiatury
+tekst = input("Podaj imię:")
+print(tekst)
+# Podaj imię:Radek
+# Radek
