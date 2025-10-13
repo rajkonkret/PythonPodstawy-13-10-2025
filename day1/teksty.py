@@ -59,3 +59,12 @@ print(tekst_format)
 # \b - backspace
 
 print("witaj {} {}".format(imie, "Tomek"))  # witaj Radek Tomek
+
+print("""Tekst
+    wielolinijkowy""")
+# "Tekst
+#     wielolinijkowy"
+
+# komentarz dokumentacyjny
+"""Komentarz
+    wielolinijkowy"""
