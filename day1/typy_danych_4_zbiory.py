@@ -55,3 +55,6 @@ zbior_3 = {18, 667, 52, 11, 44, 12.34, 62, 99, 88}
 print(zbior_3)  # {99, 11, 44, 12.34, 18, 52, 88, 667, 62}
 print(zbior.union(zbior_2, zbior_3))
 # {777, 11, 12.34, 17, 18, 22, 24, 88, 667, 99, 44, 52, 62}
+
+# część wspólna - zwraca nowy zbiór
+print(zbior & zbior_2)  # {18, 11, 44}
