@@ -91,3 +91,27 @@ print(lista)
 print(lista.pop(4))  # Anna
 print(lista)  # ['Roman', 'Tomek', 'Zenek', 'Radek', 'Aga']
 print(lista.pop())  # Aga, usunie ostatni element
+
+a = 1
+b = 3
+a = b
+print(a, b)  # 3 3
+b = 9
+print(a, b)  # 3 9
+
+lista2 = lista  # kopia referencji, adresu
+print(lista2)
+print(lista)
+lista_copy = lista.copy()  # kopia elemntów listy
+# ['Roman', 'Tomek', 'Zenek', 'Radek']
+# ['Roman', 'Tomek', 'Zenek', 'Radek']
+lista.clear()  # usunięcie wszystkich elemetów z listy
+print(lista2)  # []
+print(lista)  # []
+print(lista_copy)  # ['Roman', 'Tomek', 'Zenek', 'Radek']
+print(id(lista))
+print(id(lista2))
+print(id(lista_copy))
+# 1416163151808
+# 1416163151808
+# 1416165021376
