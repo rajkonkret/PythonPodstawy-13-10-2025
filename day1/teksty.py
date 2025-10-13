@@ -38,4 +38,24 @@ print(tekst[4])  # "j" indeks 4
 print(tekst.count("i"))  # 3 występuje 3 razy
 print(tekst.count("j", 0, 4))  # wystepuje 0 razy, indeksy 0123, z prawej zbiór otwarty
 
+imie = "Radek"
+print(imie)
+print("Imie:", imie)  # Imie: Radek
 
+starszy = "witaj %s!"  # %s - str
+print(starszy % imie)  # witaj Radek!
+
+# f - string - string sformatowany
+tekst_format = f"Mam na imię {imie} i lubię Pythona."
+print(tekst_format)
+# Mam na imię Radek i lubię Pythona.
+
+tekst_format = f"\tMam na imię {imie}\n i lubię Pythona.\b"
+print(tekst_format)
+# "	    Mam na imię Radek
+#  i lubię Pythona"
+# \t - tabulator
+# \n - nowa linia
+# \b - backspace
+
+print("witaj {} {}".format(imie, "Tomek"))  # witaj Radek Tomek
