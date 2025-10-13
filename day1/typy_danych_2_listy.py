@@ -141,3 +141,7 @@ print(lista1)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
 
 lista2 = [tekst]
 print(lista2)  # ['Pyth on.']
+
+krotka = tuple(lista1)
+print(type(krotka))  # <class 'tuple'>
+print(krotka)  # ('P', 'y', 't', 'h', ' ', 'o', 'n', '.')
