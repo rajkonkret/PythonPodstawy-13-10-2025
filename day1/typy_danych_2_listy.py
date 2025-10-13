@@ -66,3 +66,28 @@ print(lista_15[::2])  # [0, 2, 4, 6, 8, 10, 12, 14]
 print(lista_15[::-1])  # [14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 print(lista_15[::-3])  # [14, 11, 8, 5, 2]
 
+# nadpisanie elemntu
+lista[3] = "Radek"
+print(lista)
+# ['Radek', 'Tomek', 'Zenek', 'Radek', 'Anna', 'Aga']
+
+# dopisanie eleemntu do listy na wskazanym indeksie
+lista.insert(1, "Roman")
+print(lista)
+# ['Radek', 'Roman', 'Tomek', 'Zenek', 'Radek', 'Anna', 'Aga']
+print(len(lista))  # nowa długosc listy: 7
+
+# sprawdzenie numeru indeksu dla elementu, pierwszy od lewej
+print(lista.index("Radek"))  # 0
+
+print(lista.count("Radek"))  # element występuje 2 razy
+
+# usunięcie elementu, pierwszy z lewej
+lista.remove("Radek")
+print(lista)
+# ['Roman', 'Tomek', 'Zenek', 'Radek', 'Anna', 'Aga']
+
+# usunięcie po indeksie, zwraca co usunął
+print(lista.pop(4))  # Anna
+print(lista)  # ['Roman', 'Tomek', 'Zenek', 'Radek', 'Aga']
+print(lista.pop())  # Aga, usunie ostatni element
