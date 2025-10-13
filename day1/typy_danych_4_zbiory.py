@@ -58,3 +58,4 @@ print(zbior.union(zbior_2, zbior_3))
 
 # część wspólna - zwraca nowy zbiór
 print(zbior & zbior_2)  # {18, 11, 44}
+print(zbior.intersection(zbior_2))  # {18, 11, 44}
