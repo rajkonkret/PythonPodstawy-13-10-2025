@@ -108,7 +108,7 @@ print("Rabat wynosi:", rabat)  # Rabat wynosi: 25
 #     print("Musisz jescze sie douczyć")
 # print("Punkty:", punkty)
 
-alert_system = "console"
+alert_system = "email"
 lista_b = []
 error_level = "error"
 
@@ -118,7 +118,13 @@ elif alert_system == "email":
     print("System email")
     if error_level == "error":
         lista_b.append("Krytyczny")
+    elif error_level == "medium":
+        lista_b.append("Ostrzeżenie")
+    else:
+        lista_b.append("inny bład")
 else:
     print("Inny")
 
 print(lista_b)
+# System email
+# ['Krytyczny']
