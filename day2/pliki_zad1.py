@@ -32,7 +32,7 @@ with open('test.log', "a", encoding="utf-8") as f:
     f.write("Dopisane\n")
     f.write("Kolejne\n")
     f.write("Jeszcze jedno\n")
-    f.write("Dośpisane\n")
+    f.write("Dośąćźpisane\n")
 
 with open('test.log', "r", encoding="utf-8") as fh:
     lines = fh.read()
