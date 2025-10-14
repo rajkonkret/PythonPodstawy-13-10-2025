@@ -86,24 +86,39 @@ print("Rabat wynosi:", rabat)  # Rabat wynosi: 25
 
 # napisac test z...
 # dodac punktację
-punkty = 0
-odp = input("Podaj date Chrztu Polski")  # -> str
-if odp == '966':
-    print("dobrze")
-    # punkty = punkty + 1
-    punkty += 1
+# punkty = 0
+# odp = input("Podaj date Chrztu Polski")  # -> str
+# if odp == '966':
+#     print("dobrze")
+#     # punkty = punkty + 1
+#     punkty += 1
+# else:
+#     print("Musisz jescze sie douczyć")
+# # Podaj date Chrztu Polski966
+# # dobrze
+# print("Punkty:", punkty)
+# # dobrze
+# # Punkty: 1
+# odp = input("Podaj dateBitwy pod Grunwaldem")  # -> str
+# if odp == '1410':
+#     print("dobrze")
+#     # punkty = punkty + 1
+#     punkty += 1
+# else:
+#     print("Musisz jescze sie douczyć")
+# print("Punkty:", punkty)
+
+alert_system = "console"
+lista_b = []
+error_level = "error"
+
+if alert_system == "console":
+    print("Stało się cos strasznego")
+elif alert_system == "email":
+    print("System email")
+    if error_level == "error":
+        lista_b.append("Krytyczny")
 else:
-    print("Musisz jescze sie douczyć")
-# Podaj date Chrztu Polski966
-# dobrze
-print("Punkty:", punkty)
-# dobrze
-# Punkty: 1
-odp = input("Podaj dateBitwy pod Grunwaldem")  # -> str
-if odp == '1410':
-    print("dobrze")
-    # punkty = punkty + 1
-    punkty += 1
-else:
-    print("Musisz jescze sie douczyć")
-print("Punkty:", punkty)
+    print("Inny")
+
+print(lista_b)
