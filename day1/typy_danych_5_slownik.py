@@ -65,4 +65,19 @@ pol_ang = {"kot": "cat", "pies": "dog", "dach": "roof"}
 print(f"znam słowa: {pol_ang.keys()}")
 odp = input("Podaj słowo do przetłumaczenia:")
 # print(f"Tłumaczenie słowa {odp}: {pol_ang[odp.strip().lower()]}")
-print(f"Tłumaczenie słowa {odp}: {pol_ang.get(odp.strip().lower(), "Nie ma")}")
+# print(f"Tłumaczenie słowa {odp}: {pol_ang.get(odp.strip().lower(), "Nie ma")}")
+print(f"Tłumaczenie słowa {odp}: {pol_ang.get(odp.strip().casefold(), "Nie ma")}")
+# znam słowa: dict_keys(['kot', 'pies', 'dach'])
+# Podaj słowo do przetłumaczenia:Kot
+# Tłumaczenie słowa Kot: cat
+
+name1 = "GROSS"
+print(name1.lower())
+name2 = "groß"
+print(name2.lower())
+print(name1.lower() == name2.lower())
+# gross
+# groß
+# False
+""" Return a version of the string suitable for caseless comparisons. """
+print(name1.casefold() == name2.casefold())  # True
