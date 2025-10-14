@@ -5,7 +5,7 @@ rows = []
 
 # filename = 'recordc_dict.csv'
 filename = 'discount_dane.csv'
-with open(filename, "r") as csv_f:
+with open(filename, "r", newline="") as csv_f:
     dialect = csv.Sniffer().sniff(csv_f.read(1024))
     print(dialect.delimiter)  # ;
     print(dialect.quotechar)  # "
