@@ -28,3 +28,15 @@ licznik = 0
 while licznik < 10:
     licznik += 1
     print("Komunikat 3 !!!")
+
+# password = input("Podaj hasło")
+# while password != "secret":
+#     password = input("Błędne hasło, Podaj ponownie")
+# print("Hasło prawidłowe")
+# Podaj hasłoaaa
+# Błędne hasło, Podaj ponownieaaaa
+# Błędne hasło, Podaj ponownieaaaa
+# Błędne hasło, Podaj ponownieaaaaa
+# Błędne hasło, Podaj ponowniesssss
+# Błędne hasło, Podaj ponowniesecret
+# Hasło prawidłowe
