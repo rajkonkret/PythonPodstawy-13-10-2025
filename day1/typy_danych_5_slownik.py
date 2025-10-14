@@ -54,8 +54,15 @@ print(dict_small)  # {'x': 4, 'a': 8, 'c': 8}
 # Radek
 # napisac aplikacje kalkulator
 # pobrac dane 2x input()
-# wyswietlic wynik obliczenia (+) print()
-a = int(input("Podaj pierwszą liczbę:"))  # input zwraca str()
-b = float(input("Podaj drugą liczbę:"))
-# print(a + b) # konkatenacja
-print(int(a) + int(b))
+# # wyswietlic wynik obliczenia (+) print()
+# a = int(input("Podaj pierwszą liczbę:"))  # input zwraca str()
+# b = float(input("Podaj drugą liczbę:"))
+# # print(a + b) # konkatenacja
+# print(int(a) + int(b))
+
+# napisać program słownik pol-ang
+pol_ang = {"kot": "cat", "pies": "dog", "dach": "roof"}
+print(f"znam słowa: {pol_ang.keys()}")
+odp = input("Podaj słowo do przetłumaczenia:")
+# print(f"Tłumaczenie słowa {odp}: {pol_ang[odp.strip().lower()]}")
+print(f"Tłumaczenie słowa {odp}: {pol_ang.get(odp.strip().lower(), "Nie ma")}")
