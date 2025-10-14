@@ -34,3 +34,5 @@ print("Sformatowany czas usa:", formated_time_usa)  # Sformatowany czas usa: 01:
 object_time = datetime.now().strptime("14/10/2025", "%d/%m/%Y")
 print(object_time)  # 2025-10-14 00:00:00
 print(type(object_time))  # <class 'datetime.datetime'>
+
+print(35 * "-")
