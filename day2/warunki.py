@@ -83,3 +83,27 @@ print("Rabat wynosi:", rabat)
 # Rabat wynosi: 25
 rabat = 25 if suma_zam > 100 else 0  # operator warunkowy
 print("Rabat wynosi:", rabat)  # Rabat wynosi: 25
+
+# napisac test z...
+# dodac punktację
+punkty = 0
+odp = input("Podaj date Chrztu Polski")  # -> str
+if odp == '966':
+    print("dobrze")
+    # punkty = punkty + 1
+    punkty += 1
+else:
+    print("Musisz jescze sie douczyć")
+# Podaj date Chrztu Polski966
+# dobrze
+print("Punkty:", punkty)
+# dobrze
+# Punkty: 1
+odp = input("Podaj dateBitwy pod Grunwaldem")  # -> str
+if odp == '1410':
+    print("dobrze")
+    # punkty = punkty + 1
+    punkty += 1
+else:
+    print("Musisz jescze sie douczyć")
+print("Punkty:", punkty)
