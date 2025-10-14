@@ -36,3 +36,11 @@ print(object_time)  # 2025-10-14 00:00:00
 print(type(object_time))  # <class 'datetime.datetime'>
 
 print(35 * "-")
+# -----------------------------------
+products = [
+    {"sku": 1, "exp_date": today, "price": 200},
+    {"sku": 2, "exp_date": today, "price": 100},
+    {"sku": 3, "exp_date": tomorrow, "price": 200.50},
+    {"sku": 4, "exp_date": today, "price": 500},
+    {"sku": 5, "exp_date": today, "price": 99.99},
+]
