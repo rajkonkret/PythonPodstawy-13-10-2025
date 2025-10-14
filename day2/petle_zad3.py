@@ -40,3 +40,23 @@ while licznik < 10:
 # Błędne hasło, Podaj ponowniesssss
 # Błędne hasło, Podaj ponowniesecret
 # Hasło prawidłowe
+
+lista = []
+lista_int = []
+while True:
+    #  A string is numeric if all characters in the string are numeric
+    wej = input("Podaj liczbę")  # str
+    if not wej.isnumeric():
+        break
+    lista.append(wej)
+    lista_int.append(int(wej))
+
+print(lista)
+print(lista_int)  # [1, 2, 3, 4, 5]
+# Podaj liczbę1
+# Podaj liczbę2
+# Podaj liczbę3
+# Podaj liczbę4
+# Podaj liczbę5
+# Podaj liczbęa
+# ['1', '2', '3', '4', '5']
