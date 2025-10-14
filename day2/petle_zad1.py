@@ -118,3 +118,24 @@ for i in range(len(imiona)):  # range(4) -> 0,1,2,3
 # 1 Tomek
 # 2 Zenek
 # 3 Ania
+
+# enumerate() - numeruje kolekcje i zwraca indeks i numer kolekcji
+for i in enumerate(imiona):
+    print(i)
+# (0, 'Radek')
+# (1, 'Tomek')
+# (2, 'Zenek')
+# (3, 'Ania')
+i, o = (3, 'Ania')
+for i, o in enumerate(imiona):
+    print(i, o)
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
+for i, o in enumerate(imiona, start=1):
+    print(i, o)
+# 1 Radek
+# 2 Tomek
+# 3 Zenek
+# 4 Ania
