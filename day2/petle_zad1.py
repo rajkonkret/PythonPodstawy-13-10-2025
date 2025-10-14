@@ -92,4 +92,29 @@ print("Po zakończeniu petli")
 # za  każym przejściem pętli
 # Po zakończeniu petli
 
+imiona = ["Radek", "Tomek", "Zenek", "Ania"]
+print(imiona)  # ['Radek', 'Tomek', 'Zenek', 'Ania']
+print(type(imiona))  # <class 'list'>
 
+for p in imiona:
+    print(p)
+# Radek
+# Tomek
+# Zenek
+# Ania
+
+# 0 Radek
+for p in imiona:
+    print(imiona.index(p), p)
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
+
+print(len(imiona))  # 4
+for i in range(len(imiona)):  # range(4) -> 0,1,2,3
+    print(i, imiona[i])  # wypisanie z listy po indeksie
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
