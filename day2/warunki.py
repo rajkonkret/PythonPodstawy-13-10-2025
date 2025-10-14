@@ -33,3 +33,19 @@ else:  # w przeciwnym wypadku, domyslna
     print("Zero -> False")
 # Zero -> False
 
+a = "Radek"
+# warunek ma sie wykonac, gdy długosć większa niż 3
+if len(a):
+    print(f"Długość wynosi: {len(a)}")
+# Długość wynosi: 5
+
+a = "Radek"
+n = len(a)
+if n:
+    print(f"Długość wynosi: {n}")
+# Długość wynosi: 5
+
+# walrus operator, operator morsa
+if (n := len(a)) > 3:
+    print(f"Długość wynosi: {n}")
+# Długość wynosi: 5
