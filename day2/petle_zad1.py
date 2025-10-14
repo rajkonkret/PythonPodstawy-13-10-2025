@@ -59,3 +59,37 @@ for c in lista3:  # dla wszystkich elementów kolekcji
 # 4 Równe 4
 # 6 Wieksze do 4
 # 8 Wieksze do 4
+
+for i in range(0, 10, 2):  # start, stop, krok
+    print(i)
+# 0
+# 2
+# 4
+# 6
+# 8
+
+for i in range(-10, 0):
+    print(i)
+
+for i in range(10, 0, -3):
+    print(i)
+# 10
+# 7
+# 4
+# 1
+
+for c in lista3:
+    if c == 2:
+        c += 1
+        print(c)
+    print("za  każym przejściem pętli")
+print("Po zakończeniu petli")
+# za  każym przejściem pętli
+# 3
+# za  każym przejściem pętli
+# za  każym przejściem pętli
+# za  każym przejściem pętli
+# za  każym przejściem pętli
+# Po zakończeniu petli
+
+
