@@ -120,3 +120,4 @@ spam %= 1    spam = spam % 1
 https://www.hackerrank.com/
 https://naukapythona.com.pl/
 https://pl.altapps.net/soft/hackerrank-com
+https://github.com/public-api-lists/public-api-lists
