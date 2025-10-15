@@ -37,6 +37,9 @@ class Kura(Ptak):
     def wydaj_odglos(self):
         print("Ko ko ko ko")
 
+    def dziobanie(self):
+        print("Dziobanie")
+
 
 class Orzel(Ptak):
     """
@@ -45,6 +48,9 @@ class Orzel(Ptak):
 
     def wydaj_odglos(self):
         print("kier kir kier")
+
+    def polowanie(self):
+        print("Rozpoczynam polowanie")
 
 
 # nie mozna stworzyc obiektów klasy Ptak
@@ -64,3 +70,15 @@ or2.latam()
 or2.wydaj_odglos()
 # Tu Orzel Bielik Lecę z szybkością 55
 # kier kir kier
+
+# polimorfizm - obiekty róznych klas mają wspolne cechy wymuszene poprzez klase abstrakcyjną
+lista = [or2, kur2]
+for i in lista:
+    i.wydaj_odglos()
+# kier kir kier
+# Ko ko ko ko
+
+kur2.dziobanie()
+or2.polowanie()
+# Dziobanie
+# Rozpoczynam polowanie
