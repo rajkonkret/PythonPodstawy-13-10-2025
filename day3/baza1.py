@@ -15,7 +15,15 @@ try:
     name TEXT NOT NULL,
     salary REAL NOT NULL);"""
 
-    cursor.execute(query)
+    # cursor.execute(query)
+    # sql_connection.commit()
+
+    insert = """
+    INSERT INTO developers(id,name,salary)
+             VALUES (3, 'Tomek', 35000);
+             """
+
+    cursor.execute(insert)
     sql_connection.commit()
 except sqlite3.Error as e:
     print("Błąd:", e)
