@@ -1,6 +1,8 @@
 # funkcja lambda
 # skrócony zapis funkcji
 # return - zwraca wynik
+from functools import reduce
+
 
 def odejmij(a, b):
     return a - b
@@ -52,3 +54,25 @@ print(f"Zastosowanie map(): {list(map(lambda x: x * 3, lista))}")
 # Zastosowanie map(): [3, 6, 9, 12, 105, 165, 180, 300, 1500]
 print(f"Zastosowanie map(): {list(map(lambda x: x * 4, lista))}")
 # Zastosowanie map(): [4, 8, 12, 16, 140, 220, 240, 400, 2000]
+
+# filtrowanie danych
+l3 = []
+for i in lista:
+    if i < 5:
+        l3.append(i)
+print(l3)  # [1, 2, 3, 4]
+
+# filter()
+print(f"zastosowanie filter: {list(filter(lambda x: x < 5, lista))}")
+# zastosowanie filter: [1, 2, 3, 4]
+print(f"zastosowanie filter: {list(filter(lambda x: x > 100, lista))}")
+# zastosowanie filter: [500]
+# x > 5 and x < 200
+print(f"zastosowanie filter: {list(filter(lambda x: x > 5 and x < 200, lista))}")
+print(f"zastosowanie filter: {list(filter(lambda x: 5 < x < 200, lista))}")
+# zastosowanie filter: [35, 55, 60, 100]
+
+lista_reduce = [1, 2, 3, 4, 5]
+#  ((((1 + 2) + 3) + 4) + 5).
+print(reduce(lambda a, b: a + b, lista_reduce))  # 15
+print(reduce(lambda a, b: a * b, lista_reduce))  # 120
