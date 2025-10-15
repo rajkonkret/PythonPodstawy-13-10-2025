@@ -23,8 +23,19 @@ try:
              VALUES (3, 'Tomek', 35000);
              """
 
-    cursor.execute(insert)
-    sql_connection.commit()
+    # cursor.execute(insert)
+    # sql_connection.commit()
+
+    update = """
+    UPDATE developers
+    SET salary=40000
+             WHERE id=3;"""
+    # cursor.execute(update)
+    # sql_connection.commit()
+
+    for row in cursor.execute("SELECT * FROM developers;"):
+        print(row)# (3, 'Tomek', 40000.0)
+
 except sqlite3.Error as e:
     print("Błąd:", e)
 finally:
